@@ -8,7 +8,7 @@ public class exercise1 {
       long cuatro=9223372036854775807l;
       char _$5='2';
 
-      String s6="null";
+      String s6=null;
       String siete= "hola java";
 
       long Tinicio=0, Tfinal=0;
