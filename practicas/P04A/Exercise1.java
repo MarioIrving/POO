@@ -1,4 +1,3 @@
-
 public class Exercise1 {
 
 	public static boolean incorrectPasscodeAttempts(String passcode, String[] attempts){
