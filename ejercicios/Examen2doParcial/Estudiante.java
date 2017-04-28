@@ -1,4 +1,4 @@
-public class Estudiante{
+public class Estudiante {
 	
 	private String noEstudiante;
 	private String nombre;
@@ -7,24 +7,29 @@ public class Estudiante{
 	private int noDeEstudiantes;
 
 	public Estudiante () {
-		this.noDeEstudaintes=noDeEstudiantes+1;
+		this.noDeEstudiantes=getNoDeEstudiantes();
 		this.noEstudiante="No conocido";
 		this.nombre="No conocido";
 		this.puntuacion=20;
-		this.fecha= new Fecha(01/01/1995);
+		this.fecha=new Fecha("01/01/1995");
 	}
 
-	public Estudiante (String noEstudiante_param, String nombre_param,String fecha_param, int puntacion_param){
-		this.noDeEstudaintes=noDeEstudiantes+1;
+	public Estudiante (String noEstudiante_param, String nombre_param, String fecha_param, int puntacion_param){
+		this.noDeEstudiantes=getNoDeEstudiantes();
 		this.noEstudiante=noEstudiante_param;
 		this.nombre=nombre_param;
 		this.puntuacion=puntacion_param;
 		this.fecha= new Fecha(fecha_param);
-
 	}
 
-	public void estudiante.toString(){
-		
+	public int getNoDeEstudiantes(){
+		this.noDeEstudiantes+=1;	
+		return this.noDeEstudiantes;
 	}
+
+ 	public String toString(){
+ 		return this.noDeEstudiantes + " " + this.noEstudiante + " " + this.nombre + " " + this.fecha + " "+ this.puntuacion; 
+ 	}
+
 
 }
